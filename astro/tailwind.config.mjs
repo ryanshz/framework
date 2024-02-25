@@ -5,7 +5,7 @@ export default {
 		extend: {},
 	},
 	daisyui: {
-		themes: ['lofi', 'dim'],
+		themes: ['lofi', 'business', 'synthwave', 'cyberpunk', 'cmyk'],
 	},
 	plugins: [require('daisyui'), require('@tailwindcss/typography')],
 }

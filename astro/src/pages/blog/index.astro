@@ -8,7 +8,7 @@ const pageTitle = "blog";
 <BaseLayout pageTitle={pageTitle}>
 	<main class="h-fit p-5">
 		<section
-			class="card bg-base-100 shadow-xl mx-10 border border-tertiary"
+			class="card shadow-xl mx-10 border border-tertiary"
 		>
 			<div class="card-body">
 				<h2 class="card-title">{pageTitle}</h2>
@@ -17,12 +17,12 @@ const pageTitle = "blog";
 			</div>
 		</section>
 		<section
-			class="card lg:card-side bg-base-100 shadow-xl p-5 my-5 mx-10 border border-tertiary flex flex-wrap justify-between gap-12"
+			class="card lg:card-side shadow-xl p-5 my-5 mx-10 border border-tertiary flex flex-wrap justify-between gap-12"
 		>
 			{
 				allPosts.slice(0, 8).map((post) => (
 					<a href={post.url}>
-						<section class="card w-96 h-96 bg-base-100 shadow-xl">
+						<section class="card w-96 h-96 shadow-xl">
 							<figure>
 								<img
 									src={post.frontmatter.image.url}
