@@ -1,8 +1,8 @@
 ---
-import Navigation from '../components/Navigation.astro'
-import Footer from '../components/Footer.astro'
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
-const pageTitle = 'blog'
+const pageTitle = "blog";
 ---
 
 <html lang="en">
@@ -14,17 +14,102 @@ const pageTitle = 'blog'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <Navigation/>
-		<main class="h-screen p-5">
-			<h1>{pageTitle}</h1>
-			<p>where i post about astro stuff</p>
-			<ul>
-				<li><a href="/posts/post1/">post 1</a></li>
-				<li><a href="/posts/post2/">post 2</a></li>
-				<li><a href="/posts/post3/">post 3</a></li>
-			</ul>
+		<Navigation />
+		<main class="h-fit p-5">
+			<section class="card lg:card-side bg-base-100 shadow-xl p-5 mx-10 border border-tertiary">
+				<figure>
+					<img 
+						src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+						alt="Album"
+					/>
+				</figure>
+				<div class="card-body">
+					<h2 class="text-xl">{pageTitle}</h2>
+					<p class="text-lg">where i post about astro stuff</p>
+				</div>
+			</section>
+			<section class="card lg:card-side bg-base-100 shadow-xl p-5 mt-5 mx-10 border border-tertiary flex p-5 justify-around flex-wrap min-h-min">
+				<a href="/posts/post1/">
+					<section class="card w-96 bg-base-100 shadow-xl">
+						<figure>
+							<img
+								src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+								alt="Shoes"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">post 1</h2>
+							<p>first blog post</p>
+							<div class="card-actions justify-end">
+								<div class="badge badge-outline">abc</div>
+								<div class="badge badge-outline">def</div>
+							</div>
+						</div>
+					</section>
+				</a>
+				<a href="/posts/post2/">
+					<section class="card w-96 bg-base-100 shadow-xl">
+						<figure>
+							<img
+								src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+								alt="Shoes"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">post 2</h2>
+							<p>first blog post</p>
+							<div class="card-actions justify-end">
+								<div class="badge badge-outline">abc</div>
+								<div class="badge badge-outline">def</div>
+							</div>
+						</div>
+					</section>
+				</a>
+				<a href="/posts/post3/">
+					<section class="card w-96 bg-base-100 shadow-xl">
+						<figure>
+							<img
+								src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+								alt="Shoes"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">post 3</h2>
+							<p>first blog post</p>
+							<div class="card-actions justify-end">
+								<div class="badge badge-outline">abc</div>
+								<div class="badge badge-outline">def</div>
+							</div>
+						</div>
+					</section>
+				</a>
+				<a href="/posts/post4/">
+					<section class="card w-96 bg-base-100 shadow-xl">
+						<figure>
+							<img
+								src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+								alt="Shoes"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">
+								post 4
+								<div class="badge badge-secondary">NEW</div>
+							</h2>
+							<p>first blog post</p>
+							<div class="card-actions justify-end">
+								<div class="badge badge-outline">abc</div>
+								<div class="badge badge-outline">def</div>
+							</div>
+						</div>
+					</section>
+				</a>
+			</section>
+			<section class="mx-10 mt-5">
+				<button class="btn btn-block">more posts</button>
+			</section>
 		</main>
-		
-		<Footer/>
+
+		<Footer />
 	</body>
 </html>
