@@ -5,7 +5,7 @@ pubDate: 2024-02-24
 description: 'first post of astro blog'
 author: 'ryan'
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    url: 'https://docs.astro.build/default-og-image.png'
     alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
 ---
@@ -13,11 +13,11 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 ## What I've accomplished
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+- **Installing Astro**: First, I created a new Astro project and set up my online accounts.
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+- **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+- **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
 
 ## What's next
 

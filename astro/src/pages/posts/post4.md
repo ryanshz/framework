@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: blog post 4
+title: fourth post
 author: ryan
 description: "This post will show up on its own!"
 image:
