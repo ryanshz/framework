@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'second post'
 author: 'ryan'
 description: 'this was required in the tutorial'
@@ -9,5 +10,3 @@ pubDate: 2022-07-08
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---
 After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
-
-[back to blog](/blog/)
