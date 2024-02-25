@@ -1,43 +1,27 @@
 ---
-import Navigation from '../components/Navigation.astro'
-import Footer from '../components/Footer.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
 
 const pageTitle = 'ryanshz'
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Navigation/>
-		<main class="h-screen p-5">
-			<section class="card bg-base-100 shadow-xl p-5 mx-10 my-5 border border-tertiary">
+<BaseLayout pageTitle={pageTitle}>
+	<main class="h-screen p-5">
+		<section class="card bg-base-100 shadow-xl p-5 mx-10 my-5 border border-tertiary">
+			<div class="card-body">
+				<h2 class="card-title">welcome to blog page</h2>
+				<p class="text-lg">lot of blog things happening</p>
+			</div>
+		</section>
+		<section class="flex">
+			<section class="card bg-base-100 shadow-xl p-5 mx-10 my-5 border border-tertiary grow">
 				<div class="card-body">
-					<h2 class="card-title">welcome to blog page</h2>
-					<p class="text-lg">lot of blog things happening</p>
-					<div class="card-actions justify-end">
-						<a href="/blog/" class="btn btn-primary">see posts</a>
-					</div>
+					<h2 class="card-title">about</h2>
 				</div>
 			</section>
-			<section class="flex">
-				<section class="card bg-base-100 shadow-xl p-5 mx-10 my-5 border border-tertiary grow">
-					<div class="card-body">
-						<h2 class="card-title">about</h2>
-					</div>
-				</section>
-				<section class="card bg-base-100 shadow-xl p-5 mx-10 my-5 border border-tertiary grow">
-					<div class="card-body">
-						<h2 class="card-title">blog</h2>
-					</div>
-				</section>
+			<section class="card bg-base-100 shadow-xl p-5 mx-10 my-5 border border-tertiary grow">
+				<div class="card-body">
+					<h2 class="card-title">blog</h2>
+				</div>
 			</section>
-		</main>
-		<Footer/>
-	</body>
-</html>
+		</section>
+	</main>
+</BaseLayout>
