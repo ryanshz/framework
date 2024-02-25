@@ -1,4 +1,7 @@
 ---
+import Navigation from '../components/Navigation.astro'
+import Footer from '../components/Footer.astro'
+
 const pageTitle = 'index'
 ---
 
@@ -11,12 +14,8 @@ const pageTitle = 'index'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<nav>
-            <a href="/">home</a>
-            <a href="/about/">about</a>
-            <a href="/blog/">blog</a>
-        </nav>
-
+		<Navigation/>
 		<h1>{pageTitle}</h1>
+		<Footer/>
 	</body>
 </html>

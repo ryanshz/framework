@@ -1,4 +1,7 @@
 ---
+import Navigation from '../components/Navigation.astro'
+import Footer from '../components/Footer.astro'
+
 const pageTitle = 'about'
 
 const me = {
@@ -24,12 +27,7 @@ const goal = 3;
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <nav>
-            <a href="/">home</a>
-            <a href="/about/">about</a>
-            <a href="/blog/">blog</a>
-        </nav>
-
+		<Navigation/>
 		<h1>{pageTitle}</h1>
 		<p>my name is {me.firstName}</p>
 		<p>{me.country} based, currently a {me.occupation}</p>
@@ -43,5 +41,6 @@ const goal = 3;
 		{happy && <p>I am happy to be learning Astro!</p>}
 		{finished && <p>I finished this tutorial!</p>}
 		{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+		<Footer/>
 	</body>
 </html>
