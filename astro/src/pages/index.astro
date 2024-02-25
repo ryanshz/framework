@@ -2,7 +2,7 @@
 import Navigation from '../components/Navigation.astro'
 import Footer from '../components/Footer.astro'
 
-const pageTitle = 'index'
+const pageTitle = 'ryanshz'
 ---
 
 <html lang="en">
@@ -16,7 +16,27 @@ const pageTitle = 'index'
 	<body>
 		<Navigation/>
 		<main class="h-screen p-5">
-			<h1>{pageTitle}</h1>
+			<section class="card bg-base-100 shadow-xl p-5 mx-10 my-5 border border-tertiary">
+				<div class="card-body">
+					<h2 class="card-title">welcome to blog page</h2>
+					<p class="text-lg">lot of blog things happening</p>
+					<div class="card-actions justify-end">
+						<a href="/blog/" class="btn btn-primary">see posts</a>
+					</div>
+				</div>
+			</section>
+			<section class="flex">
+				<section class="card bg-base-100 shadow-xl p-5 mx-10 my-5 border border-tertiary grow">
+					<div class="card-body">
+						<h2 class="card-title">about</h2>
+					</div>
+				</section>
+				<section class="card bg-base-100 shadow-xl p-5 mx-10 my-5 border border-tertiary grow">
+					<div class="card-body">
+						<h2 class="card-title">blog</h2>
+					</div>
+				</section>
+			</section>
 		</main>
 		<Footer/>
 	</body>

@@ -28,23 +28,45 @@ const goal = 3;
 	</head>
 	<body>
 		<Navigation/>
-		<main class="h-screen p-5">
-			<h1>{pageTitle}</h1>
-			<section>
-				<p>my name is {me.firstName}</p>
-				<p>{me.country} based, currently a {me.occupation}</p>
-				{me.hobbies.length >= 2 &&
-					<p>i mess with {me.hobbies[0]} and {me.hobbies[1]} in my free time</p>
-				}
-				<p>proficient in a few things, namely:</p>
-				<ul>
-					{skills.map(skill => <li>{skill}</li>)}
-				</ul>
+		<main class="h-fit p-5">
+			<section class="card lg:card-side bg-base-100 shadow-xl mx-10 my-5 border border-tertiary">
+				<figure>
+					<img 
+						src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+						alt="Album"
+					/>
+				</figure>
+				<div class="card-body">
+					<section>
+						<h2 class="card-title">{pageTitle}</h2>
+						<p>my name is {me.firstName}</p>
+						<p>{me.country} based, currently a {me.occupation}</p>
+						{me.hobbies.length >= 2 &&
+							<p>i mess with {me.hobbies[0]} and {me.hobbies[1]} in my free time</p>
+						}
+					</section>
+				</div>
 			</section>
-			<section>
-				{happy && <p>I am happy to be learning Astro!</p>}
-				{finished && <p>I finished this tutorial!</p>}
-				{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+			<section class="card lg:card-side bg-base-100 shadow-xl mx-10 my-5 border border-tertiary">
+				<figure>
+					<img 
+						src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+						alt="Album"
+					/>
+				</figure>
+				<div class="card-body">
+					<section>
+						<h2 class="card-title">skills</h2>
+						<p>proficient in a few things, namely:</p>
+						<ul class="list-disc m-5">
+							{skills.map(skill => <li>{skill}</li>)}
+						</ul>
+						<h2 class="card-title">extra (astro tutorial)</h2>
+						{happy && <p>I am happy to be learning Astro!</p>}
+						{finished && <p>I finished this tutorial!</p>}
+						{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+					</section>
+				</div>
 			</section>
 		</main>
 		<Footer/>

@@ -16,21 +16,15 @@ const pageTitle = "blog";
 	<body>
 		<Navigation />
 		<main class="h-fit p-5">
-			<section class="card lg:card-side bg-base-100 shadow-xl p-5 mx-10 border border-tertiary">
-				<figure>
-					<img 
-						src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-						alt="Album"
-					/>
-				</figure>
+			<section class="card bg-base-100 shadow-xl mx-10 border border-tertiary">
 				<div class="card-body">
-					<h2 class="text-xl">{pageTitle}</h2>
+					<h2 class="card-title">{pageTitle}</h2>
 					<p class="text-lg">where i post about astro stuff</p>
 				</div>
 			</section>
-			<section class="card lg:card-side bg-base-100 shadow-xl p-5 mt-5 mx-10 border border-tertiary flex p-5 justify-around flex-wrap min-h-min">
+			<section class="card lg:card-side bg-base-100 shadow-xl p-5 my-5 mx-10 border border-tertiary flex p-5 justify-between flex-wrap min-h-min">
 				<a href="/posts/post1/">
-					<section class="card w-96 bg-base-100 shadow-xl">
+					<section class="card w-96 bg-base-100 shadow-xl mb-10">
 						<figure>
 							<img
 								src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -48,7 +42,7 @@ const pageTitle = "blog";
 					</section>
 				</a>
 				<a href="/posts/post2/">
-					<section class="card w-96 bg-base-100 shadow-xl">
+					<section class="card w-96 bg-base-100 shadow-xl mb-10">
 						<figure>
 							<img
 								src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -57,7 +51,7 @@ const pageTitle = "blog";
 						</figure>
 						<div class="card-body">
 							<h2 class="card-title">post 2</h2>
-							<p>first blog post</p>
+							<p>second blog post</p>
 							<div class="card-actions justify-end">
 								<div class="badge badge-outline">abc</div>
 								<div class="badge badge-outline">def</div>
@@ -66,7 +60,7 @@ const pageTitle = "blog";
 					</section>
 				</a>
 				<a href="/posts/post3/">
-					<section class="card w-96 bg-base-100 shadow-xl">
+					<section class="card w-96 bg-base-100 shadow-xl mb-10">
 						<figure>
 							<img
 								src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -75,7 +69,7 @@ const pageTitle = "blog";
 						</figure>
 						<div class="card-body">
 							<h2 class="card-title">post 3</h2>
-							<p>first blog post</p>
+							<p>third blog post</p>
 							<div class="card-actions justify-end">
 								<div class="badge badge-outline">abc</div>
 								<div class="badge badge-outline">def</div>
@@ -84,6 +78,27 @@ const pageTitle = "blog";
 					</section>
 				</a>
 				<a href="/posts/post4/">
+					<section class="card w-96 bg-base-100 shadow-xl mb-10">
+						<figure>
+							<img
+								src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+								alt="Shoes"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">
+								post 4 (DNE yet)
+								<div class="badge badge-secondary">NEW</div>
+							</h2>
+							<p>fourth blog post</p>
+							<div class="card-actions justify-end">
+								<div class="badge badge-outline">abc</div>
+								<div class="badge badge-outline">def</div>
+							</div>
+						</div>
+					</section>
+				</a>
+				<a href="/posts/post5/">
 					<section class="card w-96 bg-base-100 shadow-xl">
 						<figure>
 							<img
@@ -93,10 +108,10 @@ const pageTitle = "blog";
 						</figure>
 						<div class="card-body">
 							<h2 class="card-title">
-								post 4
+								post 5 (DNE yet)
 								<div class="badge badge-secondary">NEW</div>
 							</h2>
-							<p>first blog post</p>
+							<p>fifth blog post</p>
 							<div class="card-actions justify-end">
 								<div class="badge badge-outline">abc</div>
 								<div class="badge badge-outline">def</div>
